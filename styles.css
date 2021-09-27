@@ -1,0 +1,64 @@
+:root {
+  --font-color: #fff;
+  --background-color: rgba(0, 0, 255, 0.5);
+  --fog-color: darkslategray;
+  --night-color: rgba(204, 0, 102, 0.5);
+  --mask-color: rgba(0, 0, 0, 0.1);
+  --btn-color: transparent;
+  --border-color: lightgray;
+  --container-bg-color: #f2f2f2;
+  --btn-text-color: #fff;
+  --shadow-color: #fff;
+  --text-shadow-color: #000;
+  --fade-color: rgba(255, 255, 255, 0.6);
+}
+
+body {
+  background: var(--background-color);
+  color: var(--font-color);
+}
+
+.card {
+  max-width: 500px;
+  height: 80vh;
+  background: url(./img/clouds.jpg) center;
+  background-size: cover;
+  border-radius: 10px;
+  overflow: hidden;
+  background-blend-mode: var(--mask-color);
+}
+
+input {
+  background-color: rgba(0, 0, 0, 0.5) !important;
+  color: #fff !important;
+  border-bottom: solid 2px #fff !important;
+  border-radius: 10px 0 10px 0 !important;
+}
+
+button {
+  border-radius: 0 10px 0 10px !important;
+  transition: ease-in-out .3s;
+}
+
+input:focus,
+button:hover,
+button:focus {
+  box-shadow: 4px 2px 5px var(--fade-color) !important;
+  cursor: pointer;
+}
+
+input::placeholder {
+    color: #fff!important;
+}
+
+.error {
+  display: none;
+}
+
+.custom__text {
+    font-weight: bold;
+}
+
+.current > * {
+    padding-bottom: 10px;
+}

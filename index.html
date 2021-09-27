@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Weather App</title>
+    <!-- browser tab icon -->
+    <link
+      rel="icon"
+      href="img/overcastday_weather_sun_cloudy_4493.ico"
+      type="image/x-icon"
+    />
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+    />
+    <!-- Google Fonts Roboto -->
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap"
+    />
+    <!-- MDB -->
+    <link rel="stylesheet" href="css/mdb.min.css" />
+    <!--My CSS-->
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <!-- Start your project here-->
+    <div class="container">
+      <div
+        class="d-flex justify-content-center align-items-center"
+        style="height: 100vh;"
+      >
+        <div class="card">
+          <div class="card-body">
+            <div class="text-center">
+              <h1 class="mb-3 display-4">Weather App</h1>
+              <form action="" onsubmit="return false">
+                <input
+                  type="text"
+                  id="typeText"
+                  class="form-control text-center search"
+                  placeholder="Search By City Name"
+                />
+                <div class="d-grid gap-2 col-12 mx-auto">
+                  <button
+                    class="btn btn-warning button"
+                    role="submit"
+                    type="button"
+                  >
+                    Submit
+                  </button>
+                </div>
+                <p class="error text-light">Please enter a valid city</p>
+              </form>
+              <section>
+                <div class="container custom__text">
+                  <div class="icon pb-3">
+                    <img src="" alt="" class="weather-icon" />
+                  </div>
+                  <div class="location pb-2">
+                    <div class="city fs-3">New York, US</div>
+                    <div class="date">Thursday, Nov 26 2020</div>
+                  </div>
+                  <div class="current card-footer">
+                    <div class="temp">
+                      Temp: 25
+                      <span>°F</span>
+                    </div>
+                    <div class="weather">Weather: Sunny</div>
+                    <div class="temp-range">Temp Range: 10°F / 15°F</div>
+                  </div>
+                </div>
+              </section>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- End your project here-->
+
+    <!-- MDB -->
+    <script type="text/javascript" src="js/mdb.min.js"></script>
+    <!-- Custom scripts -->
+    <script type="text/javascript"></script>
+    <!--My Script-->
+    <script src="script.js"></script>
+  </body>
+</html>
